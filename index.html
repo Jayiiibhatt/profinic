@@ -105,7 +105,7 @@
     <div class="contact-form bg-primary p-2">
       <h2 class="m-heading">Contact Us</h2>
       <p>Please use the form below to contact us</p>
-      <form name="contact" method="POST" data-netlify="true">
+      <form id="my-form" name="contact" method="POST" data-netlify="true">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Enter Name">
@@ -147,5 +147,16 @@
   <!-- Google Maps -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoZg2Es_GrQHZf_52j2-xZ3cTfBCR0HII&callback=initMap"
   async defer></script>
+
+  <script>
+    $("#my-form").submit(function(e) {
+      e.preventDefault();
+
+      var $form = $(this);
+      $.post($form.attr("action"), $form.serialize()).then(function() {
+        alert("Thank you!");
+      });
+    });
+  </script>
 </body>
 </html>
