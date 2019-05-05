@@ -239,26 +239,30 @@ p {
 }
 
 
-.icons {
+/* .icons {
   display: flex;
-}
+  flex-wrap: wrap;
+} */
 
-.icon{
+/* .icon{
   flex: 1;
 }
 
 .icon img{
   width:150px;
   height: 150px;
-}
+} */
 
-#who .items {
+#technology .items {
   display: flex;
-  margin: 3% 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin: 2% 0; */
 }
 
-#who .items .item{
+#technology .items .item{
   flex : 1;
+  margin : 5%;
   text-align: center;
 }
 
@@ -303,4 +307,10 @@ p {
   height: 100px;
   border-radius:50%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.about-us-text {
+  text-align: justify;
+  font-style: italic;
+  font-size: 1.2em;
 }

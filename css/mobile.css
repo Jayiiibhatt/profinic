@@ -3,6 +3,16 @@
   padding: 1rem;
 }
 
+#who .team {
+  display: block;
+  padding: 1rem;
+}
+
+#who .team .team-member {
+  display: flex;
+  text-align: left;
+}
+
 /* Align icon to left */
 #what .items .item {
   display: flex;
@@ -16,7 +26,7 @@
   margin-bottom: 0;
 }
 
-@media(max-height: 402px) {
+@media(max-height: 400px) {
   #showcase .showcase-content {
     margin-top: -7rem;
     top: 177px;
@@ -94,5 +104,9 @@
 
 #contact .contact-form {
   padding: 25px 0;
-  width: 1;
+  width: 80%;
+}
+
+.about-us-text {
+  font-size: 1em;
 }
