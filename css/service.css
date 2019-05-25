@@ -1,0 +1,11 @@
+#web {
+    margin: 5%;
+}
+
+#web li {
+    list-style: none;
+    background: white;
+    padding: 3%;
+    margin: 2%;
+    text-align: center;
+}
