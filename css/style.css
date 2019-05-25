@@ -313,4 +313,8 @@ p {
   text-align: justify;
   font-style: italic;
   font-size: 1.2em;
+  background: antiquewhite;
+  padding: 3%;
+  border-top-left-radius: 20px;
+  box-shadow: 5px 5px 6px -2px;
 }
